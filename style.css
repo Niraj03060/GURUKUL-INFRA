@@ -153,7 +153,7 @@ body {
 
 /* For JS */
 .nav--open {
-  left: 50% !important;
+  right: 50% !important;
 }
 
 .hamburger--open .bar:nth-child(1) {
@@ -258,8 +258,8 @@ body {
   .nav {
     position: fixed;
     top: 75px;
-    left: -100%;
-    transform: translateX(-50%);
+    right: -100%;
+    transform: translateX(50%);
     background-color: rgb(19, 22, 26);
     width: 100%;
     padding: 5px 5px;
