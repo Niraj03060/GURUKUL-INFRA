@@ -26,12 +26,13 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
 
     <script defer src="script.js"></script>
 
     <title>Tutorial</title>
   </head>
- 
+
   <body>
     <header class="header">
       <!-- <div class="top-bar">
@@ -46,210 +47,234 @@
         </section>
       </div>
     </div> -->
-    <navbar class="navbar">
-      <div class="bottom-bar">
-        <div class="bottom-bar__content">
-          <a href="#" class="logo">
-            <img class="logo__img" src="images\Gurukul-logo.png" alt="logo" />
-          </a>
+      <navbar class="navbar">
+        <div class="bottom-bar">
+          <div class="bottom-bar__content">
+            <a href="#" class="logo">
+              <img class="logo__img" src="images\Gurukul-logo.png" alt="logo" />
+            </a>
 
-          <nav class="nav"> 
-            <ul id="nav" class="nav__list">
-              <li class="current nav__item">
-                <a class="nav__link" href="#home">HOME</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#about-us">ABOUT US</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#options">PROJECT</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#examples">CONTACT US</a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="nav">
+              <ul id="nav" class="nav__list">
+                <li class="current nav__item">
+                  <a class="nav__link" href="#home">HOME</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#about-us">ABOUT US</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#options">PROJECT</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#examples">CONTACT US</a>
+                </li>
+              </ul>
+            </nav>
 
-          <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+            <div class="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </navbar>
+      </navbar>
     </header>
     <main>
-    <div class="section" id="home" style="padding-top: 60px !important;">
-      <!-- Carousel -->
-      <div id="">
-        <div class="section-wrapper" id="section-1">
-          <div
-            id="demo"
-            class="carousel slide"
-            data-bs-ride="carousel"
-            style="position: relative"
-          >
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
+      <div class="section" id="home" style="padding-top: 60px !important">
+        <!-- Carousel -->
+        <div id="">
+          <div class="section-wrapper" id="section-1">
+            <div
+              id="demo"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              style="position: relative"
+            >
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="3"
+                ></button>
+              </div>
+
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images\Hero-banner-1.webp"
+                    alt="Los Angeles"
+                    class="desktop-banner"
+                    style="width: 100%"
+                  />
+                  <img
+                    class="mobile-banner"
+                    src="images\Mobile-banner-1.jpeg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images\Hero-banner-2.webp"
+                    alt="Chicago"
+                    class="desktop-banner"
+                    style="width: 100%"
+                  />
+                  <img
+                    class="mobile-banner"
+                    src="images\Mobile-banner-2.jpeg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images\Hero-banner-3.webp"
+                    alt="New York"
+                    class="desktop-banner"
+                    style="width: 100%"
+                  />
+                  <img
+                    class="mobile-banner"
+                    src="images\Mobile-banner-3.jpeg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images\Hero-banner-4.webp"
+                    alt="New York"
+                    class="desktop-banner"
+                    style="width: 100%"
+                  />
+                  <img
+                    class="mobile-banner"
+                    src="images\Mobile-banner-4.jpeg"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
               <button
+                class="carousel-control-prev"
                 type="button"
                 data-bs-target="#demo"
-                data-bs-slide-to="0"
-                class="active"
-              ></button>
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="000000"
+                    class="bi bi-chevron-left"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                </span>
+              </button>
               <button
+                class="carousel-control-next"
                 type="button"
                 data-bs-target="#demo"
-                data-bs-slide-to="1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#demo"
-                data-bs-slide-to="2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#demo"
-                data-bs-slide-to="3"
-              ></button>
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="000000"
+                    class="bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </span>
+              </button>
             </div>
-
-            <!-- The slideshow/carousel -->                                                                                                              
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="images\Hero-banner-1.webp"
-                  alt="Los Angeles"
-                  class=" desktop-banner"
-                  style="width: 100%"
-                />
-                <img class="mobile-banner"
-                src="images\Mobile-banner-1.jpeg"
-                style="width: 100%"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images\Hero-banner-2.webp"
-                  alt="Chicago"
-                  class=" desktop-banner"
-                  style="width: 100%"
-                />
-                <img class="mobile-banner"
-                src="images\Mobile-banner-2.jpeg"
-                style="width: 100%"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images\Hero-banner-3.webp"
-                  alt="New York"
-                  class=" desktop-banner"
-                  style="width: 100%"
-                />
-                <img class="mobile-banner"                                                                                  
-                src="images\Mobile-banner-3.jpeg"
-                style="width: 100%"
-                />
-              </div>
-              <div class="carousel-item">
-                <img                                               
-                  src="images\Hero-banner-4.webp"
-                  alt="New York"
-                  class=" desktop-banner"
-                  style="width: 100%"
-                />
-                <img class="mobile-banner"
-                src="images\Mobile-banner-4.jpeg"
-                style="width: 100%"
-                />
-              </div>
-            </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-
-            <!-- Left and right controls/icons -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#demo"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="000000"
-                  class="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
-                  />
-                </svg>
-              </span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#demo"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="000000"
-                  class="bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                  />
-                </svg>
-              </span>
-            </button>
           </div>
         </div>
 
-        
-      </div>
-
-
-      <div class="milestones">
-        <div class="milestones-inner">
-          <p>Completed Projects<br><strong>150+</strong></p>
-        </div>
-        <div class="milestones-inner">
-          <p>Ongoing Projects<br><strong>1</strong></p>
-        </div>
-        <div class="milestones-inner">
-          <p>Upcoming Projects<br><strong>2</strong></p>
+        <div class="milestones">
+          <div class="milestones-inner">
+            <p>Completed Projects<br /><strong>150+</strong></p>
+          </div>
+          <div class="milestones-inner">
+            <p>Ongoing Projects<br /><strong>1</strong></p>
+          </div>
+          <div class="milestones-inner">
+            <p>Upcoming Projects<br /><strong>2</strong></p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="section" id="about-us">
-      <h2>Projects</h2>
-    </div>
+      <div class="section" id="about-us">
+        <h2>Projects</h2>
+        <div class="section-flex">
+          <div class="section-flex-image section-flex-inner">
+            <img class="about-us-img" src="images\About-us-img.png" />
+          </div>
+          <div class="section-flex-text section-flex-inner">
+            <p>
+              At Gurukul Infraa, we are more than just developers; we are
+              visionaries, creators, and craftsmen of spaces that inspire and
+              endure.
+              
+            </p>
+            <p>
+              Established in 2002 by founder & chairman, Mr.Raj B Gulati.
+            </p>
+            <p>
+              Gurukul infraa group has been remained steadfast in their
+              commitment to innovation, sustainability, excellence and rise with
+              significant projects mainly centered in prime locations in the
+              western suburbs of Mumbai, with some in eastern mumbai suburbs and
+              city, and MMR region being our area of operation.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <div class="section" id="options">
-      <h2>About-us</h2>
-    </div>
+      <div class="section" id="options">
+        <h2>About-us</h2>
+      </div>
 
-    <div class="section" id="examples">
-      <h2>Contact</h2>
+      <div class="section" id="examples">
+        <h2>Contact</h2>
 
-      <!-- <ul>
+        <!-- <ul>
         <li><a href="filter.html">Filter out links</a></li>
         <li><a href="hash.html">Change hash</a></li>
         <li><a href="top.html">Horizontal Nav</a></li>
       </ul> -->
-    </div>
-  </main>
+      </div>
+    </main>
     <!--[if lte IE 8
       ]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script
     ><![endif]-->
