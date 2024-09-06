@@ -65,3 +65,24 @@
       font-size: 10px;
     }
   }
+
+  @media (max-width: 850px){
+    .section-flex-text p{
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 550px){
+    .section-flex{
+      flex-direction: column;
+    }
+    .section-flex-image{
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .section-flex-text{
+      width: 100%;
+      padding: 20px;
+    }
+  }
