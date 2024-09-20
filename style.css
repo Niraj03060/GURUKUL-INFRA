@@ -72,8 +72,8 @@ body {
 }
 
 .bottom-bar__content {
-  min-height: 60px;
-  max-width: 1200px;
+  /* min-height: 60px;
+  max-width: 1200px; */
   padding: 0 30px;
   margin: 0 auto;
   display: flex;
@@ -202,6 +202,10 @@ body {
   margin: 0px 20px;
 }
 
+.blue-section{
+  background-color: #12192b;
+  padding: 0px 0px;
+}
 .section-title{
   text-align: center;
     padding: 30px 0px 0px 0px;
@@ -209,6 +213,13 @@ body {
     font-weight: 600;
 }
 
+.inner-section-title{
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 25px 0px 5px 0px;
+  margin: 0;
+}
 .section p:last-child {
   margin-bottom: 0;
 }
@@ -242,9 +253,6 @@ body {
   width: 7%;
 }
 
-
-
-
 .milestones {
   display: flex;
   flex-wrap: wrap;
@@ -264,6 +272,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#promoter-sec{
+  background-color: #12192b;
+  background-image: url("Frame 17.png");
+  background-origin: content-box;
+  background-size: 100% auto;
+  padding: 40px 0px 20px 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.promoter-flex-inner{
+  width: 100%;
+    text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.promoter-img{
+  height: 150px;
+  width: auto;
+  margin: 10px 10px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
 }
 
 .section-flex-image{
@@ -289,6 +320,46 @@ body {
   width: 50%;
 }
 
+
+
 .up-img-div{
+  position:relative;
+  z-index: 1;
   width: 100%;
+  padding: 0px 40px;
+}
+
+.up-inner-div h4{
+  padding: 0px 55px;
+}
+
+.events-div{
+  padding: 15px 55px;
+}
+.events-div p{
+  padding: 0px 55px;
+}
+
+.up-text-div{
+  position:relative;
+  top: -50px;
+  margin: 10px 80px;
+  z-index: 0;
+  padding: 50px 35px 15px 35px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.up-text-div p{
+  font-size: 1.4rem;
+}
+
+.up-text-div h3{
+  font-size: 2rem;
+}
+
+.white-text{
+  color: #ffffff;
 }
