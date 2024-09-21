@@ -202,24 +202,26 @@ body {
   margin: 0px 20px;
 }
 
-.blue-section{
+.blue-section {
   background-color: #12192b;
   padding: 0px 0px;
 }
-.section-title{
+
+.section-title {
   text-align: center;
-    padding: 30px 0px 0px 0px;
-    font-size: 2rem;
-    font-weight: 600;
+  padding: 30px 0px 0px 0px;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.inner-section-title{
+.inner-section-title {
   text-align: center;
   font-size: 1.4rem;
   font-weight: 600;
   padding: 25px 0px 5px 0px;
   margin: 0;
 }
+
 .section p:last-child {
   margin-bottom: 0;
 }
@@ -229,10 +231,11 @@ body {
   display: none;
 }
 
-.section-divider{
-  border-bottom: 5px solid #ccc;
+.section-divider {
+  border-bottom: 5px solid #12192b;
   padding: 50px 0px 0px 0px;
 }
+
 .carousel-indicators button {
   background-color: black;
 }
@@ -268,13 +271,13 @@ body {
   text-align: center;
 }
 
-.section-flex{
+.section-flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#promoter-sec{
+#promoter-sec {
   background-color: #12192b;
   background-image: url("Frame 17.png");
   background-origin: content-box;
@@ -283,13 +286,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.promoter-flex-inner{
+
+.promoter-flex-inner {
   width: 100%;
-    text-align: center;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
-.promoter-img{
+
+.promoter-img {
   height: 150px;
   width: auto;
   margin: 10px 10px;
@@ -297,51 +302,52 @@ body {
   border: 3px solid #ffffff;
 }
 
-.section-flex-image{
+.section-flex-image {
   width: 40%;
   padding: 20px;
 }
 
-.section-flex-text{
+.section-flex-text {
   width: 60%;
   padding: 20px;
 }
 
-.section-flex-text p{
+.section-flex-text p {
   font-size: 1.4rem;
 }
 
-.about-us-img{
+.about-us-img {
   width: 100%;
   height: auto;
 }
 
-.up-inner-div{
+.up-inner-div {
   width: 50%;
 }
 
 
 
-.up-img-div{
-  position:relative;
+.up-img-div {
+  position: relative;
   z-index: 1;
   width: 100%;
   padding: 0px 40px;
 }
 
-.up-inner-div h4{
+.up-inner-div h4 {
   padding: 0px 55px;
 }
 
-.events-div{
+.events-div {
   padding: 15px 55px;
 }
-.events-div p{
+
+.events-div p {
   padding: 0px 55px;
 }
 
-.up-text-div{
-  position:relative;
+.up-text-div {
+  position: relative;
   top: -50px;
   margin: 10px 80px;
   z-index: 0;
@@ -352,14 +358,65 @@ body {
   line-height: 1.8;
 }
 
-.up-text-div p{
+.up-text-div p {
   font-size: 1.4rem;
 }
 
-.up-text-div h3{
+.up-text-div h3 {
   font-size: 2rem;
 }
 
-.white-text{
+.white-text {
   color: #ffffff;
+}
+
+
+/* Form */
+
+.contact-form.style-four input[type="text"], .contact-form.style-four input[type="tel"], .contact-form.style-four input[type="email"], .contact-form.style-four input[type="password"], .contact-form.style-four select, .contact-form.style-four textarea {
+  margin: 0px 15px 0px 15px;
+  background-color: #12192b;
+  border:none;
+  box-shadow: none;
+  padding: 0;
+  padding-left: 16px;
+  border-bottom: 2px solid #ffffff;
+  height: inherit;
+  line-height: 45px;
+  border-radius: 0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="password"],
+.contact-form select,
+.contact-form textarea{
+  color: #ffffff;
+  border: 1px solid #ececec;
+}
+
+.contact-form ::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+
+.theme-btn{
+  color: #ffffff;
+    display: inline-block;
+    margin: 18px 15px 0px 15px;
+    padding: 6px 10px;
+    border: white 2px solid;
+    border-radius: 11px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 3px 3px 0px #aaaaaa;
+}
+
+#contact-sec{
+  /* background-image: url("promoter-background.png");
+  background-origin: content-box;
+   background-size: 100% auto;
+  padding: 0px 0px 50px 0px;
+  background-repeat: no-repeat;
+  background-position: bottom; */
 }
