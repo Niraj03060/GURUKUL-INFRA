@@ -1,6 +1,6 @@
 const contactForm = "#contact-form-ctc";
 const modalForm = "#modal-form-ctc"
-const url = "https://hooks.zapier.com/hooks/catch/14298827/38wq103/";
+const url = "https://hooks.zapier.com/hooks/catch/14298827/2d9g5p8/";
 
 $("document").ready(function () {
   //! Contact From Validation and Submission 
