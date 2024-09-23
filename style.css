@@ -93,6 +93,12 @@ body {
   width: auto;
 }
 
+.bottom-logo {
+  height: 40px;
+  width: auto;
+  margin: 10px 10px 15px 25px;
+}
+
 .logo__text {
   font-size: 20px;
   color: #fff;
@@ -254,7 +260,7 @@ body {
 .carousel-control-next,
 .carousel-control-prev {
   width: 7%;
-}
+} 
 
 .milestones {
   display: flex;
@@ -321,6 +327,9 @@ body {
   height: auto;
 }
 
+.ongoing-div{
+  padding: 0px 120px 20px 120px;
+}
 .up-inner-div {
   width: 50%;
 }
@@ -388,7 +397,7 @@ body {
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
-.contact-form input[type="password"],
+.contact-form input[type="tel"],
 .contact-form select,
 .contact-form textarea{
   color: #ffffff;
@@ -400,10 +409,12 @@ body {
   opacity: 1; /* Firefox */
 }
 
+
+
 .theme-btn{
   color: #ffffff;
     display: inline-block;
-    margin: 18px 15px 0px 15px;
+    margin: 25px 15px 0px 15px;
     padding: 6px 10px;
     border: white 2px solid;
     border-radius: 11px;
